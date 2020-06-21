@@ -1,0 +1,43 @@
+{"functions": [
+{
+    "name": "Przerwanie: <b>INT21</b> | Funkcja: <b>2A<sub>16</sub></b> = <b>42<sub>10</sub></b>",
+    "text": " Pobiera date z systemu i wpisuje ja do rejestrow CX i DX. \n CX -> rok \n DX.H -> miesiac \n DX.L -> dzien"
+},
+{
+    "name": "Przerwanie: <b>INT21</b> | Funkcja: <b>0<sub>16</sub></b> = <b>0<sub>10</sub></b>",
+    "text": "Konczy dzialanie programu"
+},
+{
+    "name": "Przerwanie: <b>INT16</b> | Funkcja: <b>3<sub>16</sub></b> = <b>3<sub>10</sub></b>",
+    "text": "Odczytuje pozycje kursora i zapisuje ja do rejestrow CX i DX"
+},
+{
+    "name": "Przerwanie: <b>INT21</b> | Funkcja: <b>2C<sub>16</sub></b> = <b>44<sub>10</sub></b>",
+    "text": " Pobiera czas systemowy i wpisuje go do rejestrow CX i DX. \n CX.H -> godzina \n CX.L -> minuta \n DX.H -> sekunda"
+},
+{
+    "name": "Przerwanie: <b>INT21</b> | Funkcja: <b>39<sub>16</sub></b> = <b>57<sub>10</sub></b>",
+    "text": "Tworzy podkatalog. \n Argumenty: \n DX.H - numer x w nazwie folder_x \n "
+},
+{
+    "name": "Przerwanie: <b>INT21</b> | Funkcja: <b>1<sub>16</sub></b> = <b>1<sub>10</sub></b>",
+    "text": "Zwraca kod ascii do rejestru AX.L nacisnietego klawisza\n "
+},
+{
+    "name": "Przerwanie: <b>INT15</b> | Funkcja: <b>86<sub>16</sub></b> = <b>134<sub>10</sub></b>",
+    "text": "Czeka okreslona w rejestrach CX ilosc czasu w milisekundach\n "
+},
+{
+    "name": "Przerwanie: <b>INT10</b> | Funkcja: <b>2<sub>16</sub></b> = <b>2<sub>10</sub></b>",
+    "text": "Ustawia kursor w pozycji zdefiniowanej w rejestrach DX.H ,DX.L\n "
+},
+{
+    "name": "Przerwanie: <b>INT21</b> | Funkcja: <b>30<sub>16</sub></b> = <b>48<sub>10</sub></b>",
+    "text": "Zwraca numer wersji DOS\n AX.L - glowny numer wersji (2-5) \n AX.H - mniejszy numer wersji \n BX.H = FF identyfikuje MS-DOS, tylko jeśli OEM sprzedawca wybrał identyfik. = 00 identyfikuje PC-DOS \n BL:CX = 24 bitowy numer seryjny OEM jeśli BH = FF"
+},
+{
+    "name": "Przerwanie: <b>INT21</b> | Funkcja: <b>2E<sub>16</sub></b> = <b>46<sub>10</sub></b>",
+    "text": "Ustawia flage verify na off jesli AX.L = 0 lub ma on jesli AX.L = 1"
+}
+]
+}
